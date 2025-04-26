@@ -28,14 +28,14 @@ jobs:
       - name: Use Xcode 16
         run: sudo xcode-select -switch /Applications/Xcode_16.2.app/Contents/Developer
 
-      - name: Configure Homebrew cache
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/Library/Caches/Homebrew/foo--*
-            ~/Library/Caches/Homebrew/downloads/*--foo-*
-          key: brew-${{ hashFiles('.github/brew-formulae') }}
-          restore-keys: brew-
+      #- name: Configure Homebrew cache
+      #  uses: actions/cache@v2
+      #  with:
+      #    path: |
+      #      ~/Library/Caches/Homebrew/foo--*
+      #      ~/Library/Caches/Homebrew/downloads/*--foo-*
+      #    key: brew-${{ hashFiles('.github/brew-formulae') }}
+      #    restore-keys: brew-
         
       - name: Install Homebrew Packages
         continue-on-error: true
