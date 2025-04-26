@@ -35,7 +35,8 @@ jobs:
               # Build Dependencies
               "bison"
               "pkg-config"
-              "gcenx/wine/cx-llvm"
+              # "gcenx/wine/cx-llvm"
+              "llvm"
               # Dependencies
               "freetype"
               "gettext"
