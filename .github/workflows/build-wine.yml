@@ -37,6 +37,7 @@ jobs:
               "pkg-config"
               # "gcenx/wine/cx-llvm"
               "llvm"
+              "lld"
               # Dependencies
               "freetype"
               "gettext"
